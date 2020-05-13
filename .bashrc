@@ -2,7 +2,7 @@
 
 ## Automatically review bashhistory
 function bashgrep {
-    builtin grep -e "$pattern" /home/*/.bash_history
+    grep -e "$pattern" /home/*/.bash_history
     }
 
 ## Automatically ll after every cd credit
