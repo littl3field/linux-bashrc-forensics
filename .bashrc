@@ -1,5 +1,10 @@
 ### Forensics functions ###
 
+## Automatically review bashhistory
+function bashgrep {
+    builtin grep -e "$pattern" /home/*/.bash_history
+    }
+
 ## Automatically ll after every cd credit
 function cd {
     builtin cd "$@" && ll -F
